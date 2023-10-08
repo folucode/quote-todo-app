@@ -94,7 +94,7 @@ import { Client, Functions } from 'appwrite';
 
 const client = new Client()
   .setEndpoint('https://cloud.appwrite.io/v1')
-  .setProject('651873415cca946e9158');
+  .setProject('[PROJECT-ID]');
 
 const functions = new Functions(client);
 
@@ -103,7 +103,7 @@ export default {
     async getQuote() {
       try {
         const response = await functions.createExecution(
-          '6518747dd618699ca24a',
+          '[FUNCTION-ID]',
           JSON.stringify({}),
           false,
           '/',
@@ -123,7 +123,7 @@ export default {
     async getTodo() {
       try {
         const response = await functions.createExecution(
-          '651883639d8dcef7c297',
+          '[FUNCTION-ID]',
           JSON.stringify({}),
           false,
           '/',
